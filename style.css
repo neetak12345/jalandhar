@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital@1&family=Playfair+Display&family=Raleway:wght@300;400&display=swap');
+:root{--color1:#aaa69d;--color2:#3B3B98;
+--color3:#2C3A47}
+*{box-sizing:border-box;line-height:1.5em;font-family:'Raleway', sans-serif;
+ }
+body{background:var(--color1);margin:0px ;padding:0px}
+p{text-align: justify;font-size: 14pt;}
+li{font-size: 14pt;}
+a{text-decoration: none;}
+h1,h2{font-family:'Playfair Display', serif;}
+header{background: var(--color2);padding:10px;margin:0px;color:white}
+.title{text-align: center;font-size: 5vw;margin:0px;}
+nav{background: var(--color3);display:flex;} 
+nav h1{color:white;flex-basis: 30%;margin-left:2px;}
+nav ul{flex-basis:70%;text-align: right;}
+nav li{display:inline-block;padding:8px;}
+nav a{color:white;}
+main{background: white;width:80%;margin:auto;padding:10px}
+.row{display:flex;column-gap:8px;}
+.col{flex:1;}
+#about img{width:100%;height:500px}
+#head{font-size:26pt;position:absolute;text-align: center;margin:5px 30%;}
+#places img{width:100%;height:500px;}
+#places .col{text-align:center; border:thin solid;
+margin-bottom:8px; padding:10px;}
+#stay img{width:100%;height:400px}
+#stay .col{text-align: center; border:thin solid;
+margin-bottom:8px; padding:10px;}
+#malls img{width:100%;height:400px}
+#malls .col{text-align: center; border:thin solid;
+margin-bottom:8px; padding:10px;}
+#collages img{width:100%;height:400px}
+#collages .col{text-align: center; border:thin solid;
+margin-bottom:8px; padding:10px;}
+footer{background: var(--color3);padding:10px;color:white;}
+
+
+
+@media only screen and (max-width:1200px){
+    .row{flex-direction: column;}
+    nav{flex-direction: column;}
+    nav ul{flex-basis:100%;text-align:center;margin:0px;padding:0px;}
+    nav h1{flex-basis:100%;text-align: center;}
+    nav li{display:inline-block;padding-right:2px;font-size:10pt;}
+    #gallery img{height:300px;}
+    #places img{height:250px;}
+    #food img{height:150px;}
+    #about h1{text-align:center;}
+     p{text-align: justify;font-size:12pt;}
+    li{font-size:12pt}
+}
+
+
